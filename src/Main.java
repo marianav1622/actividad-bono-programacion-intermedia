@@ -21,6 +21,14 @@ public class Main {
         System.out.println("- El nombre cambió a 'Luis' (Referencia al Heap).");
         System.out.println("- La referencia no es 'Ana' (Reasignación local fallida).");
     }
+public static void cambiarValores(int x, Persona persona) {
+        // Intento de modificar el primitivo
+        x = 99;
 
+        // Modificar atributo del objeto (afecta al objeto real en el Heap)
+        persona.nombre = "Luis";
+
+        // Reasignar el parámetro a un nuevo objeto (solo afecta la variable local)
+        persona = new Persona("Ana");
     }
 }
