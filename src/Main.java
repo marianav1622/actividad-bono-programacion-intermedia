@@ -25,10 +25,10 @@ public static void cambiarValores(int x, Persona persona) {
         // Intento de modificar el primitivo
         x = 99;
 
-        // Modificar atributo del objeto (afecta al objeto real en el Heap)
+        // Modificar atributo del objeto afecta al objeto real en el Heap
         persona.nombre = "Luis";
 
-        // Reasignar el parámetro a un nuevo objeto (solo afecta la variable local)
+        // Reasignar el parámetro a un nuevo objeto solo afecta la variable local
         persona = new Persona("Ana");
     }
 }
