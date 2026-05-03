@@ -8,6 +8,19 @@ public class Main {
         System.out.println("Valor de a (primitivo): " + a);
         System.out.println("Nombre de p (objeto): " + p.nombre);
         System.out.println();
+ // 2. Llamada al método
+        cambiarValores(a, p);
+
+        // Mostrar valores finales
+        System.out.println("--- DESPUÉS de llamar al método ---");
+        System.out.println("Valor de a (primitivo): " + a);
+        System.out.println("Nombre de p (objeto): " + p.nombre);
+        
+        System.out.println("\nConclusión:");
+        System.out.println("- El int no cambió (Copia en Stack).");
+        System.out.println("- El nombre cambió a 'Luis' (Referencia al Heap).");
+        System.out.println("- La referencia no es 'Ana' (Reasignación local fallida).");
+    }
 
     }
 }
